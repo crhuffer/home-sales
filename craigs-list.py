@@ -4,6 +4,7 @@ import pandas as pd
 import md5
 import MySQLdb
 import ConfigParser
+import re
 from uuid import UUID
 
 propertiesFile = "my.properties"
@@ -86,10 +87,9 @@ for r in range(df.shape[0]):
     try:
         row = df.iloc[r]
         z = cur.execute(uquery, (row['date'], row['language'], row['source'], row['title'], row['description'], row['img'], row['link'], row['uid'],))
-        rowsaffected = cur.rowcount
         rowsaffected = int(re.search(r'Rows matched: (\d+)', cur._info).group(1))
         if rowsaffected == 0:
-            print 'new', row['uid']
+            print 'new', rowsaffected, row['uid']
             cur.execute(iquery, (row['date'], row['language'], row['source'], row['title'], row['description'], row['img'], row['link'], row['uid'],))
         conn.commit()
     except:
