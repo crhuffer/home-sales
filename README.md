@@ -1,3 +1,3 @@
-# house-hunting
+# Data Skeptic's Home Sales project
 
-A repository primarily for my use and sharing results with Linh Da.  If you find it interesting or useful, great, but this is not a formal project, per se.
+For more information, see [http://dataskeptic.com/home-sales/]
