@@ -57,7 +57,6 @@ for r in range(df.shape[0]):
     row = df.iloc[r]
     ukeys = ['title', 'description', 'src']
     uid = md5.new(str(row[ukeys].tolist())).digest()
-    print uid
     uids.append(str(uid))
 df['uid'] = uids
 df.fillna('', inplace=True)
@@ -81,13 +80,14 @@ create table craigslist_listing (
 iquery = "INSERT INTO craigslist_listing (date, language, source, title, description, img, link, uid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s);"  
 uquery = "UPDATE craigslist_listing SET date=%s, language=%s, source=%s, title=%s, description=%s, img=%s, link=%s WHERE BINARY uid = BINARY %s"
 
-conn = MySQLdb.connect(host=dbhost, user=dbuser, passwd=dbpassword, db=dbname, charset='utf8', client_flag = MySQLdb.constants.CLIENT.FOUND_ROWS)
+conn = MySQLdb.connect(host=dbhost, user=dbuser, passwd=dbpassword, db=dbname, charset='utf8')
 cur = conn.cursor()
 for r in range(df.shape[0]):
     try:
         row = df.iloc[r]
         z = cur.execute(uquery, (row['date'], row['language'], row['source'], row['title'], row['description'], row['img'], row['link'], row['uid'],))
         rowsaffected = cur.rowcount
+        rowsaffected = int(re.search(r'Rows matched: (\d+)', cur._info).group(1))
         if rowsaffected == 0:
             print 'new', row['uid']
             cur.execute(iquery, (row['date'], row['language'], row['source'], row['title'], row['description'], row['img'], row['link'], row['uid'],))
