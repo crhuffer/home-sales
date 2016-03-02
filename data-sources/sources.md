@@ -9,6 +9,9 @@ contribute a link here, please send me a pull request.  Thanks!
 Office of Policy and Management (State of Connecticut)
 ------------------------------------------------------
 Area Covered: State of Connecticut
+
 Recency: 1995 - 2013
+
 Link: http://www.ct.gov/opm/cwp/view.asp?A=2987&Q=385048
+
 Feedback: Does not appear to be updating :(
