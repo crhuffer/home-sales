@@ -15,3 +15,14 @@ Recency: 1995 - 2013
 Link: http://www.ct.gov/opm/cwp/view.asp?A=2987&Q=385048
 
 Feedback: Does not appear to be updating :(
+
+UK Government Paid Price Data
+-----------------------------
+Area Covered: UK
+
+Recency: Current month, 2016
+
+Link: https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads
+
+Feedback: Looks like this updates often but is high level (no home features) and no historical data.
+
