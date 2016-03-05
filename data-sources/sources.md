@@ -26,3 +26,12 @@ Link: https://www.gov.uk/government/statistical-data-sets/price-paid-data-downlo
 
 Feedback: Looks like this updates often but is high level (no home features) and no historical data.
 
+Australia Bureau of Statistics Residential Property Price Indexes: Eight Capital Cities
+---------------------------------------------------------------------------------------
+Area Covered: 8 Capitals Cities of Australia
+
+Recency: September 2015
+
+Link: http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/6416.0Main+Features1Sep%202015?OpenDocument
+
+Feedback: Last update 21 Dec 2015. Provides estimates of changes in residential property prices in each of the eight capital cities of Australia and related statistics.
