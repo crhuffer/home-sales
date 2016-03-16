@@ -26,3 +26,16 @@ Link: https://www.gov.uk/government/statistical-data-sets/price-paid-data-downlo
 
 Feedback: Looks like this updates often but is high level (no home features) and no historical data.
 
+Trulia API
+--------------------------
+Area covered: US
+
+Recency: 2007-11-10 to present
+
+Frequency: weekly
+
+Link: http://developer.trulia.com/docs/TruliaStats
+
+Feedback: Also aggregated data. Can return data for neighborhood, zipcode, county, city, and state. 
+
+Listings statistics about a location currently include average price data, both as an aggregate and and subdivided by number of bedrooms.
